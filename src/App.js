@@ -7,7 +7,7 @@ import { ethers } from 'ethers';
 // Constants
 const TWITTER_HANDLE = 'srthkv';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = '';
+// const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 
 const CONTRACT_ADDRESS = "0xf0fc0df235e468AcB5A29bdaD8A47c5a09bD0071";
@@ -129,6 +129,7 @@ export const App = () => {
 	useEffect(() => {
 		checkIfWalletIsConnected();
 		getTotalNftMintedSoFar();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
   return (
